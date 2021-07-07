@@ -45,36 +45,36 @@
         <hr class="bg-success pb-1 mb-2">
         <p>Ingresa tus datos</p>
 
-        <form id="myform" method="POST">
+        <form id="myform" name="myform" method="POST">
             <div class="row form-group mt-3">
-                <label for="nombre" class="col-form-label col-md-4">Id:</label>
+               
                 <div class="col-md-8">
-                    <input type="text" name="id_pa" id="id_pa" class="form-control-plaintext" readonly
+                    <input type="hidden" name="id_pa" id="id_pa" class="form-control-plaintext" readonly
                         placeholder="Id Automatico">
                 </div>
             </div>
             <div class="row form-group mt-3">
-                <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
+                <label class="col-form-label col-md-4">Nombre:</label>
                 <div class="col-md-8">
-                    <input type="text" name="nombre" id="nombre" class="form-control" required>
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Tu nombre" required>
                 </div>
             </div>
             <div class="row form-group mt-3">
-                <label for="nombre" class="col-form-label col-md-4">Fecha de Nacimiento:</label>
+                <label  class="col-form-label col-md-4">Fecha de Nacimiento:</label>
                 <div class="col-md-8">
                     <input type="date" name="fec_nac" id="fec_nac" class="form-control" required>
                 </div>
             </div>
             <div class="row form-group mt-3">
-                <label for="nombre" class="col-form-label col-md-4">Correo:</label>
+                <label class="col-form-label col-md-4">Correo:</label>
                 <div class="col-md-8">
-                    <input type="email" name="correo" id="correo" class="form-control" required>
+                    <input type="email" name="correo" id="correo" class="form-control" placeholder="Tu correo electronico" required>
                 </div>
             </div>
             <div class="row form-group mt-3">
-                <label for="nombre" class="col-form-label col-md-4">Telefono:</label>
+                <label class="col-form-label col-md-4">Telefono:</label>
                 <div class="col-md-8">
-                    <input type="text" name="tel" id="tel" class="form-control" required>
+                    <input type="text" name="tel" id="tel" class="form-control" placeholder="Telefono" required>
                 </div>
             </div>
             <br>

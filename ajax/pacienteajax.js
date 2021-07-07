@@ -60,7 +60,9 @@ $(document).ready(function () {
             success: function (response) {
                 mostrar();
                 alertify.success("Guardado");
+                vaciar();
             }
+            
         });
         return false;
     });
@@ -79,6 +81,7 @@ $(document).ready(function () {
             success: function (response) {
                 alertify.success("Modificado");
                 mostrar();
+                vaciar();
             }
         });
         return false;
@@ -98,10 +101,14 @@ $(document).ready(function () {
             success: function (response) {
                 alertify.error("Eliminado");
                 mostrar();
+                vaciar();
             }
         });
         return false;
     });
 
+    function vaciar(){
+        document.myform.reset(); 
+        }
 
 });
